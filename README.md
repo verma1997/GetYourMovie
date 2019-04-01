@@ -1,9 +1,4 @@
-![Movies](http://i.imgur.com/zX9Ddar.png)
-
-## Movies
-
-[![Build Status](https://travis-ci.org/HamidHabib/Movies.svg?branch=master)](https://travis-ci.org/HamidHabib/Movies)
-
+#Get_Your_Movie
 # Requirements
 Make sure you have the latest Node.js and NPM installed. You can download both from the following link
 
@@ -28,5 +23,3 @@ ng serve
 ```
 then naviagte to http://localhost:4200 on your browser.
 
-
-If you have any questions or bug report, please contact me at hhabi048@uottawa.ca
