@@ -1,0 +1,68 @@
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat" rel="stylesheet">
+
+<!--CSS Link-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<section *ngFor="let movie of movies" class="content">
+  <div class="container-fluid">
+    <a href="#" class="btn btn-dark" style="float: right;">BACK</a>
+  </div>
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="movie-img" [ngStyle]="{'background-image': 'url(' + movie.Poster + ')'}">    
+      </div>
+      <div class="col-md-8">
+        <h1 class="title" style="font-family: 'Abril Fatface', cursive"><strong>{{ movie.Title }}</strong></h1>
+        <br>
+        <div class="table table-striped" style="border-collapse: collapse;">
+          <tbody>
+            <tr>
+              <th>IMDB rating : </th>
+              <th>{{movie.imdbRating}}/10</th>
+            </tr>
+            <tr>
+              <th>Type : </th>
+              <th>{{movie.Type}}</th>
+            </tr>
+            <tr>
+              <th>Genre : </th>
+              <th>{{movie.Genre}}</th>
+            </tr>
+            <tr>
+              <th>Release : </th>
+              <th>{{movie.Released}}</th>
+            </tr>
+            <tr>
+              <th>Director(s) : </th>
+              <th>{{movie.Director}}</th>
+            </tr>
+            <tr>
+              <th>Writer(s) : </th>
+              <th>{{movie.Writer}}</th>
+            </tr>
+            <tr>
+              <th>Award(s) : </th>
+              <th>{{movie.Awards}}</th>
+            </tr>
+            <tr>
+              <th>Country : </th>
+              <th>{{movie.Country}}</th>
+            </tr>
+            <tr>
+              <th>Metascore : </th>
+              <th>{{movie.Metascore}}</th>
+            </tr>
+            <tr>
+              <th>Votes : </th>
+              <th>{{movie.imdbVotes}}</th>
+            </tr>
+          </tbody>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>

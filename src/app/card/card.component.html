@@ -1,0 +1,30 @@
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+<h1 class="brand">Get_Your_Movie</h1>
+<div class="search open">
+  <input [formControl]="search" title="search" type="search" class="search-box"  autofocus placeholder="Find your movie here !"/>
+</div>
+
+<div class="main">
+  <div *ngFor="let movie of movies | async" class="container">
+    <div class="cellphone-container">
+      <div class="movie">
+        <img class="movie-img" [ngStyle]="{'background-image': 'url(' + movie.Poster + ')'}">
+        <div class="text-movie-cont">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>{{ movie.Title }}</h1>
+              <ul class="movie-gen">
+                <li>Released: {{ movie.Year }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid action-row">
+            <div class="col2"><div class="watch-btn"><h3 [routerLink] = "['/movie', movie.imdbID]">View Details</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

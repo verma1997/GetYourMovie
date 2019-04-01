@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Open Sans", sans-serif;
+  background: rgb(83, 39, 85);
+
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+span {
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
